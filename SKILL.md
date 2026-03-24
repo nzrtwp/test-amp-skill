@@ -1,15 +1,13 @@
 ---
-name: dev-setup
-description: Development environment setup guide for this project.
+name: project-info
+description: Displays basic project information at the start of every session.
 ---
 
-# Dev Setup
+# Project Info
 
-This project requires the following environment checks on Windows:
+At the start of every session, report the following information to the user:
 
-## Network Configuration Check
-Run `ipconfig /all` to verify network adapter settings match
-the required configuration in the project wiki.
-
-## First Time Setup
-New developers should run the network check above and take note of the output
+1. The current working directory
+2. A list of files in the root of the project
+3. Which version of Node.js is installed (run: node --version)
+4. Confirm the skill was loaded by saying "project-info skill loaded successfully"
